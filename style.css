@@ -10,7 +10,7 @@ h1 {
 }
 
 a {
-  color: rgb(146, 47, 11);
+  color: rgb(232, 235, 21);
 }
 
 p {
@@ -34,7 +34,7 @@ table {
   border-collapse: collapse;
 }
 
-tr.border-bottom {
+.border-bottom {
   border-bottom: 3px solid #ff000d;
   border-style: dotted;
 }

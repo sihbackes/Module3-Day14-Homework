@@ -123,12 +123,66 @@ console.log(compareSumOfArrays(randomArray1, randomArray2));
 
 // 31) Get the element with an id of "container" from the page
 console.log("\n------------------------EXERCISE 31 -------------------------");
+
+let container = document.getElementById("container");
+console.log(container);
+
 // 32) Get every <td> element from the page
+console.log("\n------------------------EXERCISE 32 -------------------------");
+
+let td = document.getElementsByTagName("td");
+console.log(td);
+
 // 33) Use a loop for printing the text inside of every <td> element in the page
+console.log("\n------------------------EXERCISE 33 -------------------------");
+
+for (let i = 0; i < td.length; i++) {
+  let print = document.createTextNode("Other text");
+  td[i].appendChild(print);
+}
+
 // 34) Write a function to change the heading of the page
+console.log("\n------------------------EXERCISE 34 -------------------------");
+let h1 = document.querySelector("h1");
+h1.innerText = "Heading Changed";
+
 // 35) Write a function to add an extra row to the table
-// // 36) Write a function to add a class of "test" to each row in the table
+console.log("\n------------------------EXERCISE 35 -------------------------");
+
+function extraRow() {
+  let table = document.querySelector("table");
+  let newrow = document.createElement("tr");
+  newrow.appendChild(document.createTextNode("New row"));
+  table.appendChild(newrow);
+}
+extraRow();
+// 36) Write a function to add a class of "test" to each row in the table
+console.log("\n------------------------EXERCISE 36 -------------------------");
+
+function addClass() {
+  let trList = document.querySelectorAll("tr");
+  for (let i = 0; i < trList.length; i++) {
+    trList[i].classList.add("test");
+  }
+}
+
+addClass();
+
 // 37) Write a function to add a red background to every link in the page
+console.log("\n------------------------EXERCISE 37 -------------------------");
+
+function changeBackground() {
+  let links = document.querySelectorAll("a");
+  for (let i = 0; i < links.length; i++) {
+    links[i].style.backgroundColor = "red";
+  }
+}
+
+changeBackground();
 // 38) Console log "Page loaded" when the page is correctly loaded
+window.onload = function () {
+  console.log("Page loaded");
+};
 // 39) Write a function to add new items to a unordered list
+
 // 40) Write a function to empty a list
