@@ -35,6 +35,5 @@ table {
 }
 
 .border-bottom {
-  border-bottom: 3px solid #ff000d;
-  border-style: dotted;
+  outline: red dotted 2px;
 }

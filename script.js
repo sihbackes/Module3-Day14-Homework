@@ -180,9 +180,30 @@ function changeBackground() {
 
 changeBackground();
 // 38) Console log "Page loaded" when the page is correctly loaded
+console.log("\n------------------------EXERCISE 38 -------------------------");
+
 window.onload = function () {
   console.log("Page loaded");
 };
 // 39) Write a function to add new items to a unordered list
+console.log("\n------------------------EXERCISE 39 -------------------------");
 
+function extraUl() {
+  let ol = document.querySelector("ol");
+  let newLi = document.createElement("li");
+  newLi.appendChild(document.createTextNode("New item"));
+  ol.appendChild(newLi);
+}
+extraUl();
 // 40) Write a function to empty a list
+console.log("\n------------------------EXERCISE 40 -------------------------");
+
+function emptyList() {
+  let li = document.querySelectorAll("li");
+  for (let i = 0; i < li.length; i++) {
+    li[i].innerText = " ";
+  }
+}
+let li = document.querySelectorAll("li");
+console.log(li);
+emptyList();
