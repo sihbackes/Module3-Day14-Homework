@@ -207,3 +207,61 @@ function emptyList() {
 let li = document.querySelectorAll("li");
 console.log(li);
 emptyList();
+
+// EXTRA EXERCISES
+
+// 41) Add an eventListener to show an alert when the cursor hovers a link, displaying its href property
+console.log("\n------------------------EXERCISE 41 -------------------------");
+
+const links = document.querySelectorAll("a");
+
+function linksAlert(event) {
+  alert("Take a look on this link!");
+}
+
+links.forEach(function (key) {
+  key.addEventListener("mouseover", linksAlert);
+});
+
+// 42) Create a button that will hide every image on the page when clicked
+console.log("\n------------------------EXERCISE 42 -------------------------");
+
+function hideImages() {
+  let images = document.querySelectorAll("img");
+  for (let i = 0; i < images.length; i++) {
+    if (images[i].style.display === "none") {
+      images[i].style.display = "initial";
+    } else {
+      images[i].style.display = "none";
+    }
+  }
+}
+
+// 43) Create a button that will hide or show the table on the page when clicked
+console.log("\n------------------------EXERCISE 43 -------------------------");
+
+function hideTable() {
+  let table = document.querySelector("table");
+  if (table.style.display === "none") {
+    table.style.display = "initial";
+  } else {
+    table.style.display = "none";
+  }
+}
+
+// 44) Write a function for calculating the sum of every number inside all the table cells (if their content is numeric)
+console.log("\n------------------------EXERCISE 44 -------------------------");
+
+// 45) Delete the last letter from the heading each time the user clicks on it
+console.log("\n------------------------EXERCISE 45 -------------------------");
+
+// 46) Change the background color of a <td> if the user clicks on it
+console.log("\n------------------------EXERCISE 46 -------------------------");
+// 47) Add a delete button at the bottom of the table, when clicked it should delete a random <td>
+console.log("\n------------------------EXERCISE 47 -------------------------");
+// 48) Add automatically a pink border to a cell when the mouse hovers it
+console.log("\n------------------------EXERCISE 48 -------------------------");
+// 49) Write a function to create a table with 4 rows and 3 columns programmatically and add it to the bottom of the page
+console.log("\n------------------------EXERCISE 49 -------------------------");
+// 50) Write a function to remove the last table from the page
+console.log("\n------------------------EXERCISE 50 -------------------------");

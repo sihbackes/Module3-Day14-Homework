@@ -37,3 +37,13 @@ table {
 .border-bottom {
   outline: red dotted 2px;
 }
+
+.btn {
+  border: none;
+  background-color: burlywood;
+  width: 120px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+}
